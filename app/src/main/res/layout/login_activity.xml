@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background"
+    android:padding="@dimen/padding_10_dp"
+    android:focusable="true"
+    android:id="@+id/rl_main"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txt_login_icon"
+                style="@style/NormalTextView"
+                />
+
+            <base.rechargeapp.utils.CustomTextView
+                android:id="@+id/txt_login_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_register"
+                android:layout_centerVertical="true"
+                style="@style/StyleForCheat"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/txt_login"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10_dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/login"
+                android:layout_marginTop="@dimen/padding_10_dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_heading_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgv_title"
+                android:text="@string/login"
+                style="@style/SubHeadingTextView"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/txt_heading_login"
+                android:layout_marginTop="@dimen/registration_field_top_margin"
+                >
+
+                <base.rechargeapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cheat_user"
+                    android:layout_gravity="center"
+                    style="@style/StyleForCheat"
+                    />
+
+                <EditText
+                    android:id="@+id/edtxt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/email_or_phone"
+                    android:textColorHint="@color/white"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:background="@null"
+                    style="@style/NormalTextView"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_username"
+                android:layout_below="@id/ll_username"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_username"
+                android:layout_marginTop="@dimen/registration_field_top_margin"
+                >
+
+                <base.rechargeapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cheat_password"
+                    android:layout_gravity="center"
+                    style="@style/StyleForCheat"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtxt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:hint="@string/password"
+                    android:background="@null"
+                    android:textColorHint="@color/white"
+                    style="@style/NormalTextView"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_password"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                android:layout_below="@id/ll_password"
+                />
+
+            <RelativeLayout
+                android:layout_below="@+id/view_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/registration_field_top_margin"
+                >
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    style="@style/NormalTextView"
+                    android:text="@string/forgot_password"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        style="@style/NormalTextViewWithMediumFont"
+        android:layout_margin="@dimen/padding_10_dp"
+        android:text="@string/login"
+        android:gravity="center"
+        />
+
+    <include layout="@layout/common_progress_bar"></include>
+
+
+</RelativeLayout>

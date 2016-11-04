@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">RechargeApp</string>
+    <string name="click_action">Item Clicked</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+    <string name="click_here">Click Here</string>
+    <string name="success_created">Successfully Created</string>
+    <string name="failed">failed</string>
+    <string name="update">Update</string>
+    <string name="want_to_update">Want to Update </string>
+    <string name="GPlus">GPlus</string>
+    <string name="Facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedIn">LinkedIn</string>
+    <string name="insert">Insert</string>
+    <string name="fetch">Fetch</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="fb_app_id">1023268047794103</string>
+    <string name="delete">Delete</string>
+    <string name="click_to_get_api_hit">click to get api hit</string>
+    <string name="icon_font">undostres.ttf</string>
+    <string name="login">Login</string>
+
+
+    <!-- Cheat Code not to be changed for Spanish Languaue-->
+    <string name="cheat_login">b</string>
+    <!--<string name="cheat_dollar">a</string>-->
+    <string name="cheat_dollar">T</string>
+    <string name="cheat_mail">c</string>
+    <string name="cheat_password">d</string>
+    <string name="cheat_register">e</string>
+    <string name="cheat_user">f</string>
+    <string name="cheat_circle">S</string>
+
+
+    <!-- Normal Strings Entries -->
+    <string name="first_name">First Name</string>
+    <string name="second_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="bussiness_name">Bussiness Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="t_n_c"><u>Terms &amp; conditions</u></string>
+    <string name="mandatory">is mandatory, please fill</string>
+    <string name="password_mismatch">Password and Confirm Password Mismatched</string>
+    <string name="accept_terms_condition">Please accept terms &amp; conditions</string>
+    <string name="invalid_email">Please enter valid email address</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="user_name">User Name</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="rfc">RFC</string>
+    <string name="address">Address</string>
+    <string name="recharge">Recharge</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="confirm_mobile_number">Confirm mobile number</string>
+    <string name="enter_service_provider">Select service provider</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="done">Done</string>
+    <string name="pls_confirm_mobile">Please confirm mobile number</string>
+    <string name="number_mismatch">Mobile number and confirm mobile number mismatch</string>
+    <string name="internet_connection">Please check your internet connection . You are not connected</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="change_password">Change Password</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="about_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="help_description">Please feel free to contact us for more information.</string>
+    <string name="contact_number">09212339912</string>
+    <string name="help_email">abc@xyz.com</string>
+    <string name="cheat_email_help">v</string>
+    <string name="cheat_call">p</string>
+    <string name="logout">Logout</string>
+    <string name="logout_description">Are you sure you want to logout ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="cheat_search">u</string>
+    <string name="search_transaction">Search Transaction</string>
+    <string name="transaction_code">Transaction Code :</string>
+    <string name="no_transaction_history">No transaction done by you..</string>
+    <string name="no_search_data">No transaction found on this number</string>
+    <string name="something_went_wrong">Something went wrong please try again..</string>
+    <string name="cheat_mobile">C</string>
+    <string name="cheat_rfc">B</string>
+    <string name="cheat_address">A</string>
+    <string name="cheat_rupee">z</string>
+    <string name="cheat_close">o</string>
+    <string name="cheat_arrow_left">w</string>
+    <string name="cheat_arrow_right">q</string>
+    <string name="daily_transaction">Daily Transaction</string>
+    <string name="exit">EXIT</string>
+    <string name="exit_description">Are you sure , you want to exit ?</string>
+    <string name="returne">RETURN</string>
+    <string name="incorrect_old_password">Please enter correct old password</string>
+    <string name="cannot_navigate_before_30_days">You cannot navigate before 30 days data</string>
+    <string name="cannot_navigate_after_today">You cannot navigate more then current date</string>
+    <string name="select_service_provider">Select Service Provider</string>
+    <string name="select_pack">Select pack</string>
+    <string name="no_packs_available">No packs available for this provider</string>
+    <string name="please_select_provider_first">Please select service provider first</string>
+    <string name="ok">ok</string>
+    <string name="recharge_success">Recharge successfuly done !</string>
+    <string name="recharge_fail">Recharge failed !</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="send_mail">Send Email</string>
+    <string name="total_profit">Total Profit</string>
+    <string name="commission_report">Commission Report</string>
+    <string name="total_recharge">Total Recharge :</string>
+    <string name="commission">Commission :</string>
+    <string name="profit">Profit</string>
+    <string name="dollar">$</string>
+
+
+    <string-array name="leftMenuItems">
+        <item>Home</item>
+        <item>Search Transaction</item>
+        <item>Daily Transaction</item>
+        <item>Commission</item>
+        <item>Profile</item>
+        <item>Change Password</item>
+        <item>About</item>
+        <item>Help</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <string-array name="leftMenuIcons">
+        <item>g</item>
+        <item>h</item>
+        <item>i</item>
+        <item>i</item>
+        <item>j</item>
+        <item>k</item>
+        <item>s</item>
+        <item>m</item>
+        <item>l</item>
+    </string-array>
+
+</resources>

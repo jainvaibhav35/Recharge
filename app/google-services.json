@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "259070822767",
+    "firebase_url": "https://rechargeapp-18f80.firebaseio.com",
+    "project_id": "rechargeapp-18f80",
+    "storage_bucket": "rechargeapp-18f80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259070822767:android:5cb3ab3e55eb0761",
+        "android_client_info": {
+          "package_name": "com.rechargeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259070822767-oajdkks16fviirnpdc4ucu9sd2uttn7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rechargeapp",
+            "certificate_hash": "1BE67BBD40B79C3FC5BBB61E8FE1379AB61293AD"
+          }
+        },
+        {
+          "client_id": "259070822767-ee1r1ito7u7s2jmr268irfj42i9ftdl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvGWqOoS7iuuYikNBMbUJeI_bYc63eVfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259070822767-ee1r1ito7u7s2jmr268irfj42i9ftdl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

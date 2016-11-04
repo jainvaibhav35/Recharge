@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_search_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/search_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10_dp"
+            >
+
+        <EditText
+            android:id="@+id/edtxt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextView"
+            android:background="@color/white"
+            android:hint="@string/enter_mobile_number"
+            android:textColor="@color/form_text_color"
+            android:layout_toLeftOf="@+id/txt_search"
+            />
+
+        <base.rechargeapp.utils.CustomTextView
+            android:id="@+id/txt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="@style/StyleForCheat"
+            android:text="@string/cheat_close"
+            android:layout_marginRight="@dimen/padding_10_dp"
+            android:layout_marginLeft="@dimen/padding_10_dp"
+            android:paddingLeft="@dimen/padding_10_dp"
+            android:paddingRight="@dimen/padding_10_dp"
+            android:layout_alignTop="@+id/edtxt_search"
+            android:layout_alignBottom="@+id/edtxt_search"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_transaction_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_search_header"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/txt_no_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_transaction_history"
+        style="@style/NormalTextView"
+        android:visibility="gone"
+        android:textColor="@color/form_text_color"
+        />
+
+    <include layout="@layout/common_progress_bar" />
+
+</RelativeLayout>

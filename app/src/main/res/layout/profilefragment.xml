@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/txt_update"
+    android:layout_alignParentTop="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_header"
+        android:padding="@dimen/padding_20_dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+        <EditText
+            android:id="@+id/edtxt_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            style="@style/NormalTextView"
+            android:hint="@string/first_name"
+            android:textColor="@color/form_text_color"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_secondname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                style="@style/NormalTextView"
+                android:hint="@string/second_name"
+                android:textColor="@color/form_text_color"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                style="@style/NormalTextView"
+                android:enabled="false"
+                android:textColor="@color/form_text_color"
+                android:hint="@string/mobile_number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextView"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/form_text_color"
+                android:enabled="false"
+                android:hint="@string/email"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_rfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextView"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/form_text_color"
+                android:enabled="false"
+                android:hint="@string/rfc"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextView"
+                android:inputType="text"
+                android:textColor="@color/form_text_color"
+                android:maxLines="2"
+                android:hint="@string/address"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_bussinessname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                style="@style/NormalTextView"
+                android:inputType="text"
+                android:textColor="@color/form_text_color"
+                android:hint="@string/bussiness_name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
+
+
+    <TextView
+        android:id="@+id/txt_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_different_color_combination"
+        style="@style/NormalTextViewWithMediumFont"
+        android:layout_margin="@dimen/padding_20_dp"
+        android:text="@string/update"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        />
+
+
+    <include layout="@layout/common_progress_bar"></include>
+
+</RelativeLayout>

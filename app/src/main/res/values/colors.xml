@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0399f3</color>
+    <color name="colorPrimaryDark">#017dd9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="heading_color">#a3a3a3</color>
+    <color name="high_balance">#017dd9</color>
+    <color name="low_balance">#ee2f2f</color>
+    <color name="form_text_color">#282828</color>
+    <color name="gray">#aeaead</color>
+    <color name="left_portion_color">#f4f4f4</color>
+    <color name="profit_round_color">#affcfd</color>
+    <color name="search_bg">#ecf6fc</color>
+</resources>
+

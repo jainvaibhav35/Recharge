@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@mipmap/left_menu_background"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/login"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_20_dp"
+            android:layout_marginTop="@dimen/padding_10_dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_20_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/padding_20_dp"
+            style="@style/NormalTextView"
+            android:text="@string/user_name"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerListItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:paddingLeft="@dimen/padding_20_dp"
+        android:paddingRight="@dimen/padding_20_dp"
+        android:paddingTop="@dimen/padding_20_dp"
+        />
+</LinearLayout>

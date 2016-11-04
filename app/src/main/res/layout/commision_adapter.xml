@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10_dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_sideitem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:background="@color/left_portion_color">
+
+            <TextView
+                android:id="@+id/txt_operator_name"
+                style="@style/NormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/form_text_color" />
+
+            <TextView
+                android:id="@+id/txt_total_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_operator_name"
+                android:paddingBottom="@dimen/padding_3_dp"
+                android:paddingLeft="@dimen/padding_10_dp"
+                android:paddingRight="@dimen/padding_3_dp"
+                android:paddingTop="@dimen/padding_3_dp"
+                android:text="@string/total_recharge"
+                android:textColor="@color/form_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
+            <base.rechargeapp.utils.CustomTextView
+                android:id="@+id/txt_cheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_operator_name"
+                android:layout_toRightOf="@+id/txt_total_recharge"
+                android:paddingBottom="@dimen/padding_3_dp"
+                android:paddingTop="@dimen/padding_3_dp"
+                android:text="@string/cheat_dollar"
+                android:textColor="@color/form_text_color"
+                android:textSize="@dimen/cheat_size_small" />
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_operator_name"
+                android:layout_toRightOf="@+id/txt_cheat"
+                android:paddingBottom="@dimen/padding_3_dp"
+                android:paddingRight="@dimen/padding_3_dp"
+                android:paddingTop="@dimen/padding_3_dp"
+                android:textColor="@color/form_text_color"
+                android:textSize="@dimen/normal_text_size" />
+
+
+            <TextView
+                android:id="@+id/commision_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_total_recharge"
+                android:paddingBottom="@dimen/padding_3_dp"
+                android:paddingLeft="@dimen/padding_10_dp"
+                android:paddingRight="@dimen/padding_3_dp"
+                android:paddingTop="@dimen/padding_3_dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/normal_text_size" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txt_total_recharge" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right_side"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rl_sideitem"
+            android:layout_weight="0.7"
+            android:background="@color/colorPrimaryDark">
+
+
+            <base.rechargeapp.utils.CustomTextView
+                android:id="@+id/txt_circle"
+                style="@style/StyleForCheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_10_dp"
+                android:text="@string/cheat_circle"
+                android:textColor="@color/profit_round_color"
+                android:textSize="50dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_circle"
+                android:layout_alignRight="@+id/txt_circle"
+                android:layout_marginBottom="@dimen/padding_8_dp"
+                android:layout_marginLeft="@dimen/padding_35_dp">
+
+                <TextView
+                    android:id="@+id/txt_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commision_amount"
+                    android:includeFontPadding="false"
+                    android:text="@string/profit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/commision_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_main"
+        android:layout_marginLeft="@dimen/padding_10_dp"
+        android:layout_marginRight="@dimen/padding_10_dp"
+        android:background="@color/gray" />
+
+</RelativeLayout>

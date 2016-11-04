@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/txt_done"
+    android:layout_alignParentTop="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/high_balance"
+        >
+
+        <TextView
+            android:id="@+id/txt_your_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/NormalTextViewWithMediumFont"
+            android:text="@string/your_balance"
+            android:textColor="@color/heading_color"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_your_balance"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:id="@+id/cheat_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_rupee"
+                style="@style/StyleForCheat"
+                android:textColor="@color/low_balance"
+                />
+
+            <TextView
+                android:id="@+id/txt_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/NormalTextViewWithMediumFont"
+                android:text="@string/your_balance"
+                android:textColor="@color/low_balance"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_header"
+        android:padding="@dimen/padding_20_dp"
+        android:layout_marginTop="@dimen/padding_20_dp"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+        <EditText
+            android:id="@+id/edtxt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            style="@style/NormalTextView"
+            android:hint="@string/mobile_number"
+            android:textColor="@color/form_text_color"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_confirm_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                style="@style/NormalTextView"
+                android:hint="@string/confirm_mobile_number"
+                android:textColor="@color/form_text_color"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <EditText
+                android:id="@+id/edtxt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                style="@style/NormalTextView"
+                android:textColor="@color/form_text_color"
+                android:hint="@string/email"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <TextView
+                android:id="@+id/edtxt_service_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextView"
+                android:textColor="@color/form_text_color"
+                android:hint="@string/enter_service_provider"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/heading_color"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <TextView
+                android:id="@+id/edtxt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/NormalTextView"
+                android:textColor="@color/form_text_color"
+                android:hint="@string/enter_amount"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/heading_color"
+            />
+</LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
+
+
+    <TextView
+        android:id="@+id/txt_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_different_color_combination"
+        style="@style/NormalTextViewWithMediumFont"
+        android:layout_margin="@dimen/padding_20_dp"
+        android:text="@string/done"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        />
+
+
+    <include layout="@layout/common_progress_bar"></include>
+
+</RelativeLayout>

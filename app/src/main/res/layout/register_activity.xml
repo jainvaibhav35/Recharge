@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background"
+    android:padding="@dimen/padding_10_dp"
+    android:focusable="true"
+    android:id="@+id/rl_main"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_login_icon"
+            style="@style/NormalTextView"
+            />
+
+            <base.rechargeapp.utils.CustomTextView
+                android:id="@+id/txt_login_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_login"
+                android:layout_centerVertical="true"
+                style="@style/StyleForCheat"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:layout_above="@+id/txt_register"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10_dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login"
+            android:layout_marginTop="@dimen/padding_10_dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_heading_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgv_title"
+            android:text="@string/registration"
+            style="@style/SubHeadingTextView"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_user"
+                android:layout_gravity="center"
+                style="@style/StyleForCheat"
+                />
+
+           <!-- <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_login"
+                style="@style/StyleForCheat"
+                android:textColor="@color/low_balance"
+                />-->
+
+                <EditText
+                    android:id="@+id/edtxt_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/first_name"
+                    android:textColorHint="@color/white"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:background="@null"
+                    style="@style/NormalTextView"
+                    />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_user"
+                android:layout_gravity="center"
+                style="@style/StyleForCheat"
+                />
+
+
+                <EditText
+                    android:id="@+id/edtxt_secondname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="@string/second_name"
+                    android:background="@null"
+                    android:textColorHint="@color/white"
+                    style="@style/NormalTextView"
+                    />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+        >
+
+        <base.rechargeapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_mail"
+            android:layout_gravity="center"
+            style="@style/StyleForCheat"
+            />
+
+            <EditText
+                android:id="@+id/edtxt_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/email"
+                android:textColorHint="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_mobile"
+                android:layout_gravity="center"
+                style="@style/StyleForCheat"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/mobile_number"
+                android:textColorHint="@color/white"
+                android:inputType="number"
+                android:maxLines="1"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+        <base.rechargeapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_dollar"
+            android:layout_gravity="center"
+            style="@style/StyleForCheat"
+            />
+
+            <EditText
+                android:id="@+id/edtxt_bussinessname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/bussiness_name"
+                android:textColorHint="@color/white"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_rfc"
+                android:layout_gravity="center"
+                style="@style/StyleForCheat"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_rfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/rfc"
+                android:textColorHint="@color/white"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <base.rechargeapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_address"
+                android:layout_gravity="center"
+                style="@style/StyleForCheat"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/address"
+                android:textColorHint="@color/white"
+                android:inputType="text"
+                android:maxLines="2"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+        <base.rechargeapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_password"
+            android:layout_gravity="center"
+            style="@style/StyleForCheat"
+            />
+
+            <EditText
+                android:id="@+id/edtxt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/password"
+                android:textColorHint="@color/white"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+        <base.rechargeapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_password"
+            android:layout_gravity="center"
+            style="@style/StyleForCheat"
+            />
+
+            <EditText
+                android:id="@+id/edtxt_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:textColorHint="@color/white"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:background="@null"
+                style="@style/NormalTextView"
+                />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/registration_field_top_margin"
+            >
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/terms_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                />
+
+            <TextView
+                android:id="@+id/terms_and_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                style="@style/NormalTextView"
+                android:text="@string/t_n_c"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        style="@style/NormalTextViewWithMediumFont"
+        android:layout_margin="@dimen/padding_10_dp"
+        android:text="@string/register"
+        android:gravity="center"
+        />
+
+    <include layout="@layout/common_progress_bar"></include>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_centerVertical="true"
+    >
+
+    <base.rechargeapp.utils.CustomTextView
+        android:id="@+id/left_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/StyleForCheat"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="@string/cheat_login"
+        />
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/NormalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/form_text_color"
+        />
+
+</LinearLayout>
